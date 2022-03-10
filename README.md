@@ -5,6 +5,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/email`. The app will automatically reload if you change any of the source files.
+![Screenshot (512)](https://user-images.githubusercontent.com/66405570/157664293-58c5f75e-58cb-4c74-a1a8-76d6df4edbbe.png)
+
 
 ## Code scaffolding
 
