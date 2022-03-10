@@ -1,0 +1,179 @@
+.header-container {
+    height: 80px;
+    width: 100%;
+    background-color: white;
+    position: relative;
+}
+
+.icon-container {
+    position: absolute;
+    /* height: 50px; */
+    width: 250px;
+    left: 20px;
+    top: 50%;
+    transform: translate( 0, -50%);
+    background-color: white;
+}
+
+.icon-class {
+    font-size: 24px;
+    font-weight: 600;
+    color: gray;
+    margin-left: 20px;
+    /* background-image: url(/../../assets/images/Search-icon.png) no-repeat; */
+}
+
+.test {
+    background-image: url(/../../assets/images/Search-icon.png) no-repeat;
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+}
+
+#input_container {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+#input {
+    height: 30px;
+    margin: 0;
+    padding-left: 40px;
+    border: none;
+}
+
+#input_img {
+    position: absolute;
+    bottom: 3px;
+    left: 0px;
+    width: 30px;
+    height: 30px;
+}
+
+.input-with-round-border {
+    padding: 12px 20px;
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translate( 0, -50%);
+    height: 50px;
+    width: 350px;
+    border: 1px solid gray;
+    border-radius: 40px;
+}
+
+.email-list-container {
+    height: 130px;
+    width: 100%;
+    padding: 20px 30px;
+    border-bottom: 1px solid gray;
+}
+
+.email-list-container .email-image {
+    height: 80%;
+    width: 100%;
+}
+
+.email-list-container .title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: gray;
+}
+
+.email-list-container .subject {
+    font-size: 12px;
+    color: gray;
+}
+
+.email-list-container .time {
+    position: absolute;
+    right: 5px;
+    font-size: 12px;
+    color: gray;
+    font-weight: 600;
+}
+
+.email-list-container .short-detail {
+    margin-top: 3px;
+    font-size: 12px;
+    color: gray;
+    font-weight: 600;
+}
+
+.star {
+    font-size: 15px;
+}
+
+.underline {
+    position: relative;
+    bottom: 0px;
+    height: 1px;
+    width: 100%;
+    background-color: gray;
+}
+
+.vertical-line-container {
+    position: relative;
+}
+
+.vertical-line {
+    position: absolute;
+    height: 700px;
+    width: 1px;
+    background-color: gray;
+}
+
+.email-detail-heading .heading-title {
+    font-size: 32px;
+    color: gray;
+}
+
+.email-detail-heading .heading-title-one {
+    padding-top: 10px;
+    font-size: 15px;
+    color: gray;
+}
+
+.email-detail-heading2 .heading-title {
+    font-size: 15px;
+    color: gray;
+}
+
+.email-detail-heading2 heading-title-one {
+    font-size: 15px;
+    color: gray;
+}
+
+.underline-email-detail {
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    height: 1px;
+    width: 100%;
+    background-color: gray;
+}
+
+.email-body {
+    margin-top: 55px;
+    height: 500px;
+    width: 100%;
+    padding: 20px 50px;
+}
+
+.email-body .email-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.email-body .email-title-two {
+    font-size: 17px;
+    color: rgb(66, 62, 62);
+    margin-bottom: 10px;
+}
+
+.email-body .body {
+    font-size: 17px;
+    color: rgb(66, 62, 62);
+}

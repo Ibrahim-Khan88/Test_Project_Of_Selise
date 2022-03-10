@@ -1,0 +1,135 @@
+<div class="header-container">
+
+
+    <div class="icon-container">
+
+        <i class="fas fa-edit icon-class"></i>
+        <i class="fa fa-envelope icon-class"></i>
+        <i class="fa fa-folder icon-class"></i>
+        <i class="fa fa-trash icon-class"></i>
+
+    </div>
+
+    <div class="input-with-round-border">
+        <div id="input_container">
+            <input type="text" id="input">
+            <img src="/../../assets/images/Search-icon.png" id="input_img">
+        </div>
+    </div>
+
+
+</div>
+
+<div class="row">
+    <div style="overflow: hidden;padding: 0;" class="col-md-3">
+
+
+        <div style="padding: 0;" *ngFor="let email of emails; let indexOfelement=index;">
+            <div (click)="showEmailBody(indexOfelement)" class="email-list-container">
+
+                <div style="height: 75px;" class="row">
+
+                    <div class="col-md-3">
+                        <img class="email-image" src="/../../assets/images/image.jpg">
+                    </div>
+
+                    <div style="padding: 5px 5px;" class="col-md-6">
+                        <div class="title">{{email.designTitle}}</div>
+                        <div class="subject"> {{email.subject}}</div>
+                    </div>
+
+                    <div style="position: relative;" class="col-md-3">
+                        <div class="time"> {{email.date}} </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-md-1">
+                        <span class="fa fa-star checked star"></span>
+                    </div>
+
+                    <div class="col-md-11">
+                        <div class="short-detail"> You know about last time i was go.. </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- <div class="underline"></div> -->
+        </div>
+
+    </div>
+
+    <div style="padding: 0px;" class="col-md-9">
+        <div class="vertical-line-container">
+            <div class="vertical-line"> </div>
+        </div>
+
+
+
+
+
+        <div class="email-detail">
+
+            <div style="padding: 5px 20px;" class="email-detail-heading">
+                <div class="row">
+                    <div class="col-md-10">
+                        <div class="heading-title"> Last change to get StartUp Framework - 50% OFF.. </div>
+                    </div>
+
+                    <div class="col-md-1">
+                        <div class="heading-title-one"> Move on </div>
+                    </div>
+
+                    <div class="col-md-1">
+
+                        <button type="button" class="btn btn-secondary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Action
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="underline-email-detail"></div>
+
+            <div style="padding: 20px 20px;" class="email-detail-heading2">
+                <div class="row">
+
+                    <div class="col-md-9">
+                        <span style="display: inline; margin-right: 10px;" class="fa fa-star checked star"></span>
+                        <div style="display: inline;" class="heading-title"> DesignModo to me </div>
+                    </div>
+
+                    <div class="col-md-2">
+                        <div class="heading-title-one"> 2014-05-05, 12:04 </div>
+                    </div>
+                    <div class="col-md-1">
+                        <div class="heading-title-one">
+                            <i class="fa fa-envelope icon-class"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <div *ngIf="emails.length != 0" class="email-body">
+                <div class="email-title"> {{emails[selectedIndexValue].title}} </div>
+                <div class="email-title-two"> {{emails[selectedIndexValue].subTitle}} </div>
+                <div class="body"> {{emails[selectedIndexValue].body}} </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+</div>
